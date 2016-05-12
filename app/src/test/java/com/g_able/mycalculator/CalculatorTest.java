@@ -25,9 +25,4 @@ public class CalculatorTest {
     public void หาร(){
         assertEquals(1.0, calculator.div(4, 4));
     }
-
-    @Test
-    public void หารศูนย์() throws Exception {
-        calculator.div(2, 1);
-    }
 }
