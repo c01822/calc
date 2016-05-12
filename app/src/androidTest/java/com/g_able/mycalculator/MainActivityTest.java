@@ -52,5 +52,4 @@ public class MainActivityTest {
         onView(withId(R.id.operation_div_button)).perform(click());
         onView(withId(R.id.operation_result_text_view)).check(matches(withText("3.0")));
     }
-
 }
