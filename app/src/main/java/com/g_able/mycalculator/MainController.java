@@ -1,8 +1,13 @@
 package com.g_able.mycalculator;
 
 public class MainController {
-    Calculator calculator = new Calculator();
+
+    Calculator calculator;
     CalculatorListener listener;
+
+    public MainController() {
+        this.calculator = new RealCalculator();
+    }
 
     public void add(double firstOperand, double secondOperand) {
         listener.onSuccess(String.valueOf(calculator.add(firstOperand, secondOperand)));
@@ -19,5 +24,9 @@ public class MainController {
 
     public void setListener(CalculatorListener listener) {
         this.listener = listener;
+    }
+
+    public void setCalculator(Calculator calculator){
+        this.calculator = calculator;
     }
 }

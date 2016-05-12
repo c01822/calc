@@ -1,0 +1,2 @@
+json_key_file "myCalc.json" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
+package_name "com.g_able.mycalculator" # e.g. com.krausefx.app

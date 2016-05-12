@@ -12,7 +12,7 @@ import static org.junit.runners.Parameterized.*;
 
 @RunWith(Parameterized.class)
 public class CalculatorSubTest {
-    Calculator calculator = new Calculator();
+    RealCalculator realCalculator = new RealCalculator();
     private final double firstOperand, secondOperand, expectedResult;
 
     @Parameters
@@ -32,6 +32,6 @@ public class CalculatorSubTest {
 
     @Test
     public void runAdd(){
-        assertEquals(this.expectedResult, calculator.add(this.firstOperand, this.secondOperand), 0);
+        assertEquals(this.expectedResult, realCalculator.add(this.firstOperand, this.secondOperand), 0);
     }
 }

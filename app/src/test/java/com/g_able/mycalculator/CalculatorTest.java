@@ -4,25 +4,25 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class CalculatorTest {
-    Calculator calculator = new Calculator();
+    RealCalculator realCalculator = new RealCalculator();
 
     @Test
     public void บวก() {
-        assertEquals(2.0, calculator.add(1, 1));
+        assertEquals(2.0, realCalculator.add(1, 1));
     }
 
     @Test
     public void ลบ(){
-        assertEquals(0.0, calculator.sub(2, 2));
+        assertEquals(0.0, realCalculator.sub(2, 2));
     }
 
     @Test
     public void คูณ(){
-        assertEquals(9.0, calculator.mul(3, 3));
+        assertEquals(9.0, realCalculator.mul(3, 3));
     }
 
     @Test
     public void หาร(){
-        assertEquals(1.0, calculator.div(4, 4));
+        assertEquals(1.0, realCalculator.div(4, 4));
     }
 }
